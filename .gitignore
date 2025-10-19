@@ -1,0 +1,16 @@
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+instance/
+.webassets-cache
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+.cache/
+*.log

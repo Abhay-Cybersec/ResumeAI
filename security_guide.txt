@@ -1,0 +1,49 @@
+Security Best Practices for Code Review:
+
+1. Input Validation:
+   - Always validate and sanitize user inputs
+   - Use allowlists instead of blocklists
+   - Implement length and type checks
+   - Prevent SQL injection, XSS, and command injection
+
+2. Authentication & Authorization:
+   - Use strong password hashing (bcrypt, Argon2)
+   - Implement multi-factor authentication
+   - Apply principle of least privilege
+   - Use secure session management
+
+3. Data Protection:
+   - Never hardcode credentials or API keys
+   - Encrypt sensitive data at rest and in transit
+   - Use environment variables for secrets
+   - Implement proper access controls
+
+4. Error Handling:
+   - Don't expose stack traces to users
+   - Log errors securely
+   - Implement graceful error recovery
+   - Sanitize error messages
+
+5. Dependency Management:
+   - Keep all libraries updated
+   - Review dependencies for known vulnerabilities
+   - Use dependency scanning tools
+   - Remove unused dependencies
+
+6. Code Quality:
+   - Follow language-specific best practices
+   - Implement proper exception handling
+   - Use parameterized queries for databases
+   - Avoid eval() and similar dangerous functions
+
+7. Secure Communication:
+   - Always use HTTPS
+   - Validate SSL/TLS certificates
+   - Implement CORS properly
+   - Use secure headers (CSP, HSTS, etc.)
+
+8. Cryptography:
+   - Use established cryptographic libraries
+   - Never roll your own crypto
+   - Use secure random number generators
+   - Keep cryptographic keys secure
